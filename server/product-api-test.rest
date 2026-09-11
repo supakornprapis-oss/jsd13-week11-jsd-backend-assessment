@@ -1,0 +1,31 @@
+### 1. Get all products 
+GET http://localhost:3000/products
+
+### 2. Get products with search query 
+GET http://localhost:3000/products?search=Tire
+
+### 3. Get single product by ID 
+GET http://localhost:3000/products/1
+
+### 4. Add a new product 
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "DID Chain 520",
+  "price": 1250,
+  "quantity": 8
+}
+
+### 5. Update an existing product using PUT 
+PUT http://localhost:3000/products/1
+Content-Type: application/json
+
+{
+  "name": "IRC Tire IZ-003 (Updated)",
+  "price": 3300,
+  "quantity": 15
+}
+
+### 6. Delete product 
+DELETE http://localhost:3000/products/1
